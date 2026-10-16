@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe y Proyección de Costos - Landbot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="h-9 w-9 rounded-xl bg-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/30">
+                    IG
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight">Iglú Marketing Digital</span>
+                    <span class="block text-xs text-slate-400">Análisis de Costos Landbot & WhatsApp</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6 text-sm text-slate-300">
+                <a href="#factura" class="hover:text-indigo-400 transition-colors">Factura Actual</a>
+                <a href="#metricas" class="hover:text-indigo-400 transition-colors">Métricas & Conversión</a>
+                <a href="#actual" class="hover:text-indigo-400 transition-colors">Estado a 15 Oct</a>
+                <a href="#proyeccion" class="hover:text-indigo-400 transition-colors">Proyección Nov</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden py-16 lg:py-24 border-b border-slate-800/60 bg-gradient-to-b from-slate-900 via-slate-900 to-indigo-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 mb-6">
+                    Reporte Financiero Oficial
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                    Desglose y Proyección de Costos <span class="text-indigo-400">Landbot.io</span>
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed">
+                    Análisis detallado de tu consumo de WhatsApp Pro, costos fijos, excedentes de mensajes y estimación de cierre para el próximo ciclo.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#factura" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-600/25">
+                        Ver Factura Actual ($1,326.81)
+                    </a>
+                    <a href="#proyeccion" class="px-6 py-3 rounded-xl bg-slate-800 text-slate-200 font-medium hover:bg-slate-700 transition-all border border-slate-700">
+                        Ver Proyección Noviembre
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
+        
+        <id id="factura" class="scroll-mt-24"></id>
+        <div class="space-y-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-800 pb-4">
+                <div>
+                    <span class="text-xs uppercase tracking-wider text-indigo-400 font-semibold">Documento A-175740</span>
+                    <h2 class="text-3xl font-bold text-white mt-1">Análisis de la Factura Actual</h2>
+                </div>
+                <div class="mt-4 md:mt-0 bg-indigo-950/60 border border-indigo-800/50 px-5 py-3 rounded-2xl">
+                    <span class="text-xs text-indigo-300 block">Total Facturado</span>
+                    <span class="text-2xl font-black text-white">$1,326.81 USD</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Costos Fijos Card -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-3xl p-6 sm:p-8 backdrop-blur-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-semibold text-white flex items-center space-x-2">
+                                <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                                <span>Costos Fijos Mensuales</span>
+                            </h3>
+                            <span class="text-emerald-400 font-semibold bg-emerald-500/10 px-3 py-1 rounded-full text-xs border border-emerald-500/20">Periodo 07 Oct - 07 Nov</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mb-6">Corresponde al pago por adelantado de tu suscripción base y números de teléfono adicionales.</p>
+                        
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex justify-between items-center py-2 border-b border-slate-700/40">
+                                <span class="text-slate-300">Suscripción WhatsApp Pro (1 unidad)</span>
+                                <span class="font-medium text-white">$220.00 USD</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2 border-b border-slate-700/40">
+                                <span class="text-slate-300">Número de WhatsApp Principal (Incluido)</span>
+                                <span class="font-medium text-emerald-400">$0.00 USD</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2 border-b border-slate-700/40">
+                                <span class="text-slate-300">Números Adicionales WhatsApp (4 unidades)</span>
+                                <span class="font-medium text-white">$400.00 USD</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2">
+                                <span class="text-slate-300">Asientos / Usuarios (3 incluidos)</span>
+                                <span class="font-medium text-emerald-400">$0.00 USD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-700 flex justify-between items-center font-bold">
+                        <span class="text-slate-300">Subtotal Fijo:</span>
+                        <span class="text-xl text-white">$620.00 USD</span>
+                    </div>
+                </div>
+
+                <!-- Costos Variables Card -->
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-3xl p-6 sm:p-8 backdrop-blur-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-semibold text-white flex items-center space-x-2">
+                                <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                                <span>Costos Variables (Consumo)</span>
+                            </h3>
+                            <span class="text-indigo-400 font-semibold bg-indigo-500/10 px-3 py-1 rounded-full text-xs border border-indigo-500/20">Periodo 07 Sep - 07 Oct</span>
+                        </div>
+                        <p class="text-sm text-slate-400 mb-6">Cargos por mensajes de servicio y excedentes (*overage*) acumulados a mes vencido.</p>
+                        
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex justify-between items-center py-2 border-b border-slate-700/40">
+                                <span class="text-slate-300">10,000 Mensajes Base (Tarifa Meta)</span>
+                                <span class="font-medium text-white">$2.14 USD</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2 border-b border-slate-700/40">
+                                <span class="text-slate-300">182,449 Mensajes Excedentes (Tarifa Meta)</span>
+                                <span class="font-medium text-white">$147.74 USD</span>
+                            </li>
+                            <li class="flex justify-between items-center py-2">
+                                <span class="text-slate-300">182,449 Mensajes Excedentes (Comisión Landbot)</span>
+                                <span class="font-medium text-white">$556.93 USD</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-700 flex justify-between items-center font-bold">
+                        <span class="text-slate-300">Subtotal Variable:</span>
+                        <span class="text-xl text-white">$706.81 USD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="metricas" class="scroll-mt-24 space-y-8">
+            <div class="border-b border-slate-800 pb-4">
+                <span class="text-xs uppercase tracking-wider text-indigo-400 font-semibold">Análisis de Tráfico</span>
+                <h2 class="text-3xl font-bold text-white mt-1">¿Cómo se relacionan las métricas y la factura?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-6">
+                    <div class="text-indigo-400 font-bold text-3xl mb-2">348,417</div>
+                    <h4 class="text-white font-semibold mb-1">Mensajes Totales Enviados</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Volumen bruto absoluto registrado en las métricas de tu panel del 7 sep al 7 oct.</p>
+                </div>
+                <div class="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-6">
+                    <div class="text-indigo-400 font-bold text-3xl mb-2">192,449</div>
+                    <h4 class="text-white font-semibold mb-1">Mensajes de Servicio Facturados</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Suma de la cuota base (10k) más los excedentes reales sujetos a cobro de plataforma.</p>
+                </div>
+                <div class="bg-slate-800/30 border border-slate-700/50 rounded-2xl p-6">
+                    <div class="text-indigo-400 font-bold text-3xl mb-2">~55.23%</div>
+                    <h4 class="text-white font-semibold mb-1">Ratio de Conversión</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Porcentaje aproximado de mensajes enviados que se convierten en mensajes de servicio facturables.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="actual" class="scroll-mt-24 space-y-8">
+            <div class="border-b border-slate-800 pb-4">
+                <span class="text-xs uppercase tracking-wider text-indigo-400 font-semibold">Corte a Mitad de Ciclo</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Estado Actual (Al 15 de Octubre)</h2>
+            </div>
+
+            <div class="bg-gradient-to-r from-indigo-950/60 to-slate-800/60 border border-indigo-500/30 rounded-3xl p-8 shadow-xl">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                    <div class="lg:col-span-2 space-y-4">
+                        <span class="px-3 py-1 bg-indigo-500/20 text-indigo-300 text-xs font-medium rounded-full border border-indigo-500/30">Periodo en curso: 07 Oct - 15 Oct (8 días)</span>
+                        <h3 class="text-2xl font-bold text-white">Tráfico disparado en el periodo actual</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Las métricas de tu panel muestran un volumen de <strong class="text-white">721,601 mensajes enviados</strong> en tan solo 8 días. Aplicando tu factor histórico de conversión y descontando la cuota base, el costo de excedentes acumulado a la fecha es considerable.
+                        </p>
+                    </div>
+                    <div class="bg-slate-900/80 border border-slate-700 p-6 rounded-2xl text-center space-y-2">
+                        <span class="text-xs text-slate-400 uppercase tracking-wider block">Costo Excedente Estimado Hoy</span>
+                        <div class="text-3xl font-black text-indigo-400">~$1,500.54 USD</div>
+                        <span class="text-xs text-slate-400 block">(~388,539 mensajes excedentes)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="proyeccion" class="scroll-mt-24 space-y-8">
+            <div class="border-b border-slate-800 pb-4">
+                <span class="text-xs uppercase tracking-wider text-indigo-400 font-semibold">Estimación Financiera</span>
+                <h2 class="text-3xl font-bold text-white mt-1">Proyección para la Próxima Factura (7 de Noviembre)</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Resumen de Cobro Estimado</h3>
+                        <p class="text-sm text-slate-400 mb-6">Si mantienes este ritmo de tráfico durante los 23 días restantes del ciclo, esto es lo que verás en tu próximo estado de cuenta:</p>
+                        
+                        <div class="space-y-4 text-sm">
+                            <div class="flex justify-between items-center py-3 border-b border-slate-700">
+                                <span class="text-slate-300">Costo Fijo (Suscripción Pro + 4 Números)</span>
+                                <span class="font-semibold text-white">$620.00 USD</span>
+                            </div>
+                            <div class="flex justify-between items-center py-3 border-b border-slate-700">
+                                <span class="text-slate-300">Excedente de Mensajes (Proyectado 30 días)</span>
+                                <span class="font-semibold text-indigo-400">$5,000.00 - $5,200.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-slate-700 flex justify-between items-center">
+                        <span class="font-bold text-slate-200">Total Estimado Próxima Factura:</span>
+                        <span class="text-2xl font-black text-emerald-400">$5,620 - $5,820 USD</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/60 rounded-3xl p-8 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-4">Recomendaciones de Optimización</h3>
+                        <ul class="space-y-4 text-sm text-slate-300">
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                <span><strong>Revisar flujos automatizados:</strong> Evalúa si hay loops o mensajes redundantes enviados por el bot que multipliquen innecesariamente el tráfico.</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-indigo-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span><strong>Monitoreo quincenal:</strong> Sigue de cerca las métricas en tu panel de Landbot a mitad de mes para prevenir sorpresas al cierre de ciclo.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-8 pt-4">
+                        <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs">
+                            <strong>Nota importante:</strong> Esta proyección se basa en la tendencia actual de tráfico y puede variar si ajustas la frecuencia de envío de los flujos de tu bot.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-800 mt-20 py-8 text-center text-xs text-slate-500">
+        <p>Informe generado para Iglú Marketing Digital. Basado en Factura A-175740 y métricas oficiales de Landbot.</p>
+    </footer>
+
+</body>
+</html>
